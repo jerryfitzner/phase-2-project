@@ -16,7 +16,7 @@ const Needs = () => {
       <h3><u>{ need.name }</u></h3>
       <p><strong>Location:</strong> { need.location }</p>
       <p><strong>Need:</strong> {need.need}</p>
-      <button>Help Organiztion</button>
+      {/* <button>Help Organiztion</button> */}
       <hr />
     </div>
     )
