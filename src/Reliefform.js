@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const Requestform = () => {
   const [form, setForm] = useState({
@@ -16,15 +16,6 @@ const Requestform = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // console.log(form);
-    // const newSubmission = {
-    //   name: form.name,
-    //   need: form.need,
-    //   location: form.location,
-    //   contact: form.contact
-    // }
-
-    // console.log(newSubmission)
 
     fetch('http://localhost:3001/needs', {
       method: "POST",
@@ -36,12 +27,8 @@ const Requestform = () => {
     })
     .then(resp => resp.json())
     .then(data => console.log(data))
-
-    // setForm({...form, [e.target.name]: e.target.value})
     
   }
-  
-  // console.log(form);
 
   return (
     <div>
