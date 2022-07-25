@@ -1,0 +1,24 @@
+{
+  "needs": [
+    {
+      "name": "Water for Many",
+      "need": "Fresh Water",
+      "location": "Port-au-prince, Haiti",
+      "contact": "phone (333)123-4444"
+    },
+    {
+      "name": "Water for Many",
+      "need": "Fresh Water",
+      "location": "Port-au-prince, Haiti",
+      "contact": "phone (333)123-4444"
+    }
+  ],
+  "donors": [
+    {
+      "name": "Billy John"
+    },
+    {
+      "name": "Fred Flinstone"
+    }
+  ]
+}
