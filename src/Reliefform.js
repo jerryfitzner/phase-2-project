@@ -47,6 +47,9 @@ const Requestform = () => {
             <label>Describe Your Need:</label>
             <textarea type="text" name="need" onChange={handleChange} />
             <br />
+            <label>How can we contact you?</label>
+            <textarea type="text" name="contact" onChange={handleChange} />
+            <br />
             <button>Request Help</button>
         </form>
       </div>
