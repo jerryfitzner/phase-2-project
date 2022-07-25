@@ -34,10 +34,3 @@ const Needs = () => {
 
 export default Needs;
 
-{/* <div>
-      <h2>Relief Request</h2>
-      <h3>Name/Organization</h3>
-      <p>Location</p>
-      <p>Phone Number</p>
-      <button>Help Organiztion</button>
-    </div> */}
