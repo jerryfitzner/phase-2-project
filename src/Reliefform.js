@@ -26,7 +26,7 @@ const Requestform = () => {
 
     // console.log(newSubmission)
 
-    fetch('http://localhost:3001', {
+    fetch('http://localhost:3001/needs', {
       method: "POST",
       headers: {
         'Accept': 'application/json',
