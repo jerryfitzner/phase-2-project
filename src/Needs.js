@@ -1,14 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
-const Needs = () => {
-  const [needs, setNeeds] = useState([]);
-
-  useEffect(() => {
-    fetch('http://localhost:3001/needs')
-    .then(resp => resp.json())
-    .then(need => setNeeds(need))
-  },[]);
+const Needs = ({ needs }) => {
 
   const needList = needs.map(need => {
     return (

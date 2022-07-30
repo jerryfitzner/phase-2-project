@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 
-const Requestform = () => {
+const Requestform = ({ needCallback }) => {
   const [form, setForm] = useState({
     name: '',
     need: '',
@@ -12,7 +13,7 @@ const Requestform = () => {
     setForm({...form, [e.target.name]: e.target.value});
   };
 
-  console.log(form)
+  const history = useHistory();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -26,7 +27,10 @@ const Requestform = () => {
       body: JSON.stringify(form)
     })
     .then(resp => resp.json())
-    .then(data => console.log(data))
+    .then(data => {
+      needCallback(data);
+      history.push('/needs')
+    })
     
   }
 
@@ -39,16 +43,16 @@ const Requestform = () => {
         <br/>
         <form onSubmit={handleSubmit}>
           <label>Name/Organization:</label>
-            <input type="text" name="name" onChange={handleChange} />
+            <input type="text" value={form.name} name="name" onChange={handleChange} />
             <br />
             <label>Location:</label>
-            <input type="text" name="location" onChange={handleChange} />
+            <input type="text" value={form.location} name="location" onChange={handleChange} />
             <br />
             <label>Describe Your Need:</label>
-            <textarea type="text" name="need" onChange={handleChange} />
+            <textarea type="text" value={form.need} name="need" onChange={handleChange} />
             <br />
             <label>How can we contact you?</label>
-            <textarea type="text" name="contact" onChange={handleChange} />
+            <textarea type="text" value={form.contact} name="contact" onChange={handleChange} />
             <br />
             <button>Request Help</button>
         </form>
