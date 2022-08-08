@@ -1,3 +1,41 @@
+# The Relief Request App
+
+The relief request app is a simple single page application which was built using REACT. There are many improvements which will added as time goes by. 
+
+## Requirements 
+
+- Install json-server by typing npm install -g json-server in the terminal.
+- Fork and clone the git hub repository.
+
+## Installation Insctructions
+
+- Install json-server by typing npm install -g json-server, if you have not previously installed it.
+- Fork and clone the git hub repository, if you have not done so yet.
+- Run the json server by typing json-server --watch db.json in the terminal.
+- Open the REACT App by typing NPM Start in the terminal. 
+
+## Using the Relief Request App
+
+In the NavBar at the top of the page, there are three links:
+
+1) Home
+
+- This page breifly describes the application, and has a button to take the user to the "Current Needs" page, where they can view requests previously submitted. 
+
+2) Current Needs
+
+- This page displays all the needs which have been submitted through the form on the "Request Relief" page. 
+
+3) Request Relief 
+
+- This page allows a user to submit a relief request for a need they might have in their country. 
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
