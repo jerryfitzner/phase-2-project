@@ -12,7 +12,7 @@ The relief request app is a simple single page application which was built using
 - Install json-server by typing npm install -g json-server, if you have not previously installed it.
 - Fork and clone the git hub repository, if you have not done so yet.
 - Run the json server by typing `json-server --watch db.json --port 3001` in the terminal.
-- Open the REACT App by typing NPM Start in the terminal. 
+- Open the REACT App by typing NPM Start or NPM Yarn in the terminal. 
 
 ## Using the Relief Request App
 
