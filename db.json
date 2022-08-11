@@ -34,6 +34,13 @@
       "location": "Africa",
       "contact": "Email us!",
       "id": 5
+    },
+    {
+      "name": "Red Cross",
+      "need": "We need shelter.",
+      "location": "Cuba",
+      "contact": "By air mail. ",
+      "id": 6
     }
   ],
   "donors": [
