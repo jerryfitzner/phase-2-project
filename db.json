@@ -27,6 +27,13 @@
       "location": "Mexico",
       "contact": "Call Fred @ 123-456-7890",
       "id": 4
+    },
+    {
+      "name": "Red Cross",
+      "need": "Medical Supplies",
+      "location": "Africa",
+      "contact": "Email us!",
+      "id": 5
     }
   ],
   "donors": [
